@@ -72,3 +72,6 @@ request.onsuccess = function (e) {
       checkDatabase();
     }
   };
+  
+   // Listen for app coming back online
+  window.addEventListener('online', checkDatabase);
