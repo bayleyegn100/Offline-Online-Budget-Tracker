@@ -73,5 +73,18 @@ request.onsuccess = function (e) {
     }
   };
   
+    // use saveRecord which is called in the sendTransaction function used when offline.
+    const saveRecord = (record) => {
+        console.log('Save record invoked');
+        // Create a transaction on the BudgetStore db with readwrite access
+        const transaction = db.transaction(['BudgetStore'], 'readwrite');
+      
+        // Access your BudgetStore object store
+        const store = transaction.objectStore('BudgetStore');
+      
+        // Add record to your store with add method.
+        store.add(record);
+      };
+      
    // Listen for app coming back online
   window.addEventListener('online', checkDatabase);
