@@ -2,12 +2,6 @@
 let db;
 let budgetVersion;
 
-// const indexedDB =
-//     window.indexedDB ||
-//     window.mozIndexedDB ||
-//     window.webkitIndexedDB ||
-//     window.msIndexedDB ||
-//     window.shimIndexedDB;
 // creat a database request in indexdb
 
 const request = window.indexedDB.open("BudgetDB", budgetVersion || 21);
