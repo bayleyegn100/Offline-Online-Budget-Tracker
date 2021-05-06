@@ -24,7 +24,7 @@ The application designed for any one who want to use it. To develop this applica
 If you interested you can use and start tracking your budget with or with out intenet connection. If you want to test the app first open the application by using localhost:3000 or by using a live url and make your internet connecion offline mode. Following that add inputs inside name of transation and transaction ammount placholders and press on the + or - buttons depending on your budget transaction. Next inspect your the devtol and click on application and then under indexDB you will find a budget file link. When you click on that you will see your transactions. Now turn on your connection and refresh your page and your mongodb. The previous transaction information you had inside indexDB will be posted on mongoDB.
 If you face any problem or would like to reach me, you can find my contact in question section.
 
-![image](/img/online db.jpg)
+![image](/img/online pic.jpg)
 
 ## Usage 
 
