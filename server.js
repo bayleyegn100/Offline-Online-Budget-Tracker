@@ -3,7 +3,7 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 const compression = require("compression");
 // use port 3000 unless there exists a preconfigured port
-const PORT = process.env.Port || 3000;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 mongoose.connect(
-  process.env.MONGOGB_URI || 
+  process.env.MONGODB_URI || 
   "mongodb://localhost/budget", 
   {
   useNewUrlParser: true,
